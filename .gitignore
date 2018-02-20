@@ -36,6 +36,8 @@ venv
 *.exe
 *.out
 *.app
+<<<<<<< HEAD
 
 # Debug Build
 /cmake-build-debug/
+
