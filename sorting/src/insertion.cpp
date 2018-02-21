@@ -17,3 +17,18 @@ std::vector<string> getWords(string filename){
     return words;
 }
 
+std::vector<string> insertionSortWords(std::vector<string> words){
+    int counter = 1;
+    while(counter < words.size()) {
+        int cur = counter;
+        while (cur > 0 && words.at(cur - 1) > words.at(cur)) {
+            string temp = words.at(cur - 1);
+            words.at(cur - 1) = words.at(cur);
+            words.at(cur) = temp;
+            cur--;
+        }
+        counter++;
+    }
+    return words;
+}
+

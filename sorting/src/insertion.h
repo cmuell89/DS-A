@@ -13,5 +13,6 @@ using namespace std;
 
 std::vector<string> getWords(string filename);
 
+std::vector<string> insertionSortWords(std::vector<string> words);
 
 #endif //ALGORITHMS_INSERTION_H_H
